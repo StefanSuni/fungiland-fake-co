@@ -35,7 +35,7 @@ h2, h3 {
 /* Header */
 
 .container {
-    
+    background-image: url(mushroom-cultivation-farm.webp);
     min-height: 26rem;
     margin: 0;
     background-position: center;
