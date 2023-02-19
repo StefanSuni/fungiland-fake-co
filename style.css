@@ -35,7 +35,7 @@ h2, h3 {
 /* Header */
 
 .container {
-    background-image: url(../Fungiland/images/mushroom-cultivation-farm.jpeg);
+    background-image: url(images/mushroom-cultivation-farm.jpeg);
     min-height: 26rem;
     margin: 0;
     background-position: center;
