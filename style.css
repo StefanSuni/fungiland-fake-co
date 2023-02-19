@@ -1,0 +1,352 @@
+@font-face {
+    font-family: 'Permanent Marker';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/permanentmarker/v16/Fh4uPib9Iyv2ucM6pGQMWimMp004La2Cfw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+    font-family: 'Gloria Hallelujah';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/gloriahallelujah/v17/LYjYdHv3kUk9BMV96EIswT9DIbW-MIS11zM.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+    font-family: 'Courgette';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/courgette/v13/wEO_EBrAnc9BLjLQAUk1VvoK.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body {
+    margin: 0;
+}
+
+h2, h3 {
+    font-family: 'Gloria Hallelujah', sans-serif;
+    font-style: italic;
+}
+
+/* Header */
+
+.container {
+    background-image: url(../Fungiland/images/mushroom-cultivation-farm.jpeg);
+    min-height: 26rem;
+    margin: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+h1 {
+    font-family: 'Permanent Marker', sans-serif;
+    text-align: center;
+    text-shadow: 3px 3px 3px #6DE8C0;
+    color: #99783D;
+    font-size: 7.5rem;
+    -webkit-text-stroke: 1px black;
+    margin-top: 0;
+    padding-top: 50px;
+    flex-shrink: 3;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+    padding-bottom: 30px;
+    padding-left: 0;
+    overflow: hidden;
+}
+
+nav ul li a {
+    font-family: 'Permanent Marker', sans-serif;
+    font-size: 2.5rem;
+    color: #99783D;
+    text-decoration: none;
+    text-shadow: 2px 2px 2px #6DE8C0;
+    -webkit-text-stroke: 1px black;
+    padding: 0 10px;
+    transition: all 0.5s ease-out;
+}
+
+nav ul li a:hover {
+    color: #6DE8C0;
+    text-shadow: 2px 2px 2px #99783D;
+}
+
+@media only screen and (max-width: 895px) {
+    nav ul { 
+        flex-wrap: wrap;
+    }
+    h1 {
+        font-size: 5.5rem;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    nav ul { 
+        flex-wrap: wrap;
+    }
+    h1 {
+        font-size: 3.5rem;
+    }
+}
+
+/* Main */
+
+main {
+    background-color: #E6D4B5;
+    padding-bottom: 40px;
+}
+
+.quotation {
+    display: block;
+    background-color: #6DE8C0;
+    text-align: center;
+    font-size: 1.75rem;
+    padding: 10px;
+    text-shadow: 0px 0px 17px rgba(0,0,0,0.78);
+    box-shadow: 0px 0px 176px 97px rgba(109,232,192,0.44) inset;
+    -webkit-box-shadow: 0px 0px 176px 97px rgba(109,232,192,0.44) inset;
+    -moz-box-shadow: 0px 0px 176px 97px rgba(109,232,192,0.44) inset;
+}
+
+.benefit-container {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.cards h4 {
+    font-family: 'Permanent Marker', sans-serif;
+    font-size: 1.5rem;
+}
+
+.gallery {
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.image-container {
+    overflow: hidden;
+    max-width: 500px;
+    max-height: 350px;
+} 
+
+.image-container img {
+    width: 450px;
+    padding: 20px 20px;
+}
+
+.cards {
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cards div {
+    font-family: 'yorkten-slab-normal', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    border: none;
+    border-radius: 3cqb;
+    background-color: #C6E673;
+    margin: 10px 20px;
+    padding: 10px 15px;
+    min-width: 150px;
+    max-width: 450px;
+    word-spacing: 7px;
+    font-size: 1.25rem;
+    line-height: 1.6rem;
+    box-shadow: 1px 1px 183px 4px rgba(0,0,0,0.67);
+    -webkit-box-shadow: 1px 1px 183px 4px rgba(0,0,0,0.67);
+    -moz-box-shadow: 1px 1px 183px 4px rgba(0,0,0,0.67);
+}
+
+.cards ul {
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+.personnel h3 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.workers {
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.image-profile {
+    overflow: hidden;
+    background-color: #7F9990;
+    margin: 0 20px 50px 20px; 
+    border: none;
+    border-radius: 2cqb;
+    box-shadow: 1px 1px 183px 4px #405850;
+    -webkit-box-shadow: 1px 1px 183px 4px #405850;
+    -moz-box-shadow: 1px 1px 183px 4px #405850;
+}
+
+.image-profile img {
+    width: 250px;
+    padding: 20px 30px; 
+}
+
+.image-profile p {
+    text-align: center;
+    font-family: 'Permanent Marker', sans-serif;
+    font-weight: 200;
+    font-size: 1.8rem;
+    color: rgba(255, 250, 250, 0.842);
+    -webkit-text-stroke: 1px black;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 895px) {
+    .quotation { 
+        flex-wrap: wrap;
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 425px) {    
+    .quotation { 
+        flex-wrap: wrap;
+        font-size: 0.75rem;
+    }
+    .cards{
+        margin: 0 25px;
+    }
+    .cards p {
+        margin: 10px 10px;
+        font-size: 0.9rem;
+    }
+    .image-container img {
+        width: 350px;
+    }
+}
+
+/* Contact us */
+
+.contact {
+    margin: auto;
+    width: 50%;
+    background-color: #C6E673;
+    border: 1px solid #C6E673;
+    border-radius: 2cqb;
+    max-width: 600px;
+    box-shadow: 1px 1px 183px 4px rgba(0,0,0,0.67);
+    -webkit-box-shadow: 1px 1px 183px 4px rgba(0,0,0,0.67);
+    -moz-box-shadow: 1px 1px 183px 4px rgba(0,0,0,0.67);
+}
+
+.contact h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Permanent Marker', sans-serif;
+    font-size: 1.4rem;
+    padding: 10px 20px;
+}
+
+input, textarea {
+    background-color: rgba(255, 250, 250, 0.842);
+    padding: 12px;
+    border-radius: 1cqb;
+}
+
+input[type=submit] {
+    font-family: 'Permanent Marker', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    background-color: #4ecca2;
+    color: rgba(255, 250, 250, 0.842);
+    -webkit-text-stroke: 1px black;
+    padding: 12px 20px;
+    margin: 20px auto 0 auto;
+    border: none;
+    border-radius: 1cqb;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+    min-width: 200px;
+}
+
+input[type=submit]:hover {
+    color: #4ecca2;
+    background-color: rgba(255, 250, 250, 0.842);
+}
+
+.contactform {
+    padding-bottom: 20px;
+}
+
+.contact form label {
+    padding: 10px 0px;
+}
+
+@media only screen and (max-width: 425px) {
+    input[type=submit] {
+        margin: 20px auto 0 auto;
+    }
+    .contact {
+        min-width: 310px;
+    }
+}
+
+/* Footer */
+
+footer {
+    background-color: #99783D;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px -29px 53px -15px rgba(0,0,0,0.85) inset;
+    -webkit-box-shadow: 0px -29px 53px -15px rgba(0,0,0,0.85) inset;
+    -moz-box-shadow: 0px -29px 53px -15px rgba(0,0,0,0.85) inset;
+}
+
+.credits {
+    font-style: oblique;
+}
+
+footer p {
+    margin: 0;
+    padding: 40px 30px;
+    font-family: 'yorkten-slab-normal', sans-serif;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: black;
+    
+}
+
+@media only screen and (max-width: 425px) {
+    footer p {
+        font-size: 1rem;
+    }
+}
